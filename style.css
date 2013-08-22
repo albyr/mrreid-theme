@@ -1,14 +1,14 @@
 /*
-Theme Name: Twenty Thirteen
-Theme URI: http://wordpress.org/themes/twentythirteen
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Theme Name: Alby2
+Theme URI: http://wordpress.MrReid.org
+Author: Alby
+Author URI: http://wordpress.MrReid.org
+Description: Custom version of Twenty Thirteen
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
+Tags: MrReid
+Text Domain: alby2
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -113,12 +113,12 @@ body {
 }
 
 a {
-	color: #ca3c08;
+	color: #0859ca;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #ac0404;
+	color: #044aac;
 }
 
 a:focus {
@@ -127,7 +127,7 @@ a:focus {
 
 a:active,
 a:hover {
-	color: #ea9629;
+	color: #2979ea;
 	outline: 0;
 }
 
@@ -142,7 +142,11 @@ h4,
 h5,
 h6 {
 	clear: both;
+	/*Alby2
 	font-family: Bitter, Georgia, serif;
+	font-weight: not set*/
+	font-family: Raleway, Georgia, serif;
+	font-weight: 300;
 	line-height: 1.3;
 }
 
@@ -587,11 +591,11 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	background: #e05d22; /* Old browsers */
-	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	background: #2271e0; /* Old browsers */
+	background: -webkit-linear-gradient(top, #2271e0 0%, #1265d9 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #2271e0 0%, #1265d9 100%); /* W3C */
 	border: none;
-	border-bottom: 3px solid #b93207;
+	border-bottom: 3px solid #0751b9;
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
@@ -607,9 +611,9 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
-	background: #ed6a31; /* Old browsers */
-	background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+	background: #3176ed; /* Old browsers */
+	background: -webkit-linear-gradient(top, #3176ed 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #3176ed 0%, #e55627 100%); /* W3C */
 	outline: none;
 }
 
@@ -617,11 +621,11 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	background: #d94412; /* Old browsers */
-	background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	background: #1265d9; /* Old browsers */
+	background: -webkit-linear-gradient(top, #1265d9 0%, #2271e0 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #1265d9 0%, #2271e0 100%); /* W3C */
 	border: none;
-	border-top: 3px solid #b93207;
+	border-top: 3px solid #0751b9;
 	padding: 10px 24px 11px;
 }
 
@@ -736,7 +740,7 @@ img.alignnone {
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
-	color: #220e10;
+	color: #0e1622;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;
@@ -868,13 +872,13 @@ div.nav-menu > ul {
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
-	background-color: #220e10;
+	background-color: #0e1622;
 	color: #fff;
 }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: #220e10;
+	background-color: #0e1622;
 	border: 2px solid #f7f5e7;
 	border-top: 0;
 	display: none;
@@ -900,7 +904,7 @@ ul.nav-menu ul a,
 
 ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover {
-	background-color: #db572f;
+	background-color: #2f77db;
 }
 
 ul.nav-menu li:hover > ul,
@@ -912,7 +916,7 @@ ul.nav-menu li:hover > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
+	color: #0a54bc;
 	font-style: italic;
 }
 
@@ -1015,7 +1019,8 @@ ul.nav-menu li:hover > ul,
 }
 
 .entry-title a:hover {
-	color: #ea9629;
+	color: #2f77db;
+	text-decoration: none;
 }
 
 
@@ -1030,11 +1035,11 @@ ul.nav-menu li:hover > ul,
 }
 
 .entry-meta a {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .entry-meta a:hover {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .entry-meta > span {
@@ -1108,12 +1113,12 @@ ul.nav-menu li:hover > ul,
 
 .entry-content a,
 .comment-content a {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .entry-content a:hover,
 .comment-content a:hover {
-	color: #ea9629;
+	color: #2979ea;
 }
 
 .entry-content blockquote {
@@ -1167,8 +1172,8 @@ footer.entry-meta {
 .format-chat .entry-content .page-links a,
 .format-quote .entry-content .page-links a,
 .page-links a {
-	background: #e63f2a;
-	border: 1px solid #e63f2a;
+	background: #2a78e6;
+	border: 1px solid #2a78e6;
 	color: #fff;
 }
 
@@ -1180,7 +1185,7 @@ footer.entry-meta {
 .format-quote .entry-content .page-links a:hover,
 .page-links a:hover {
 	background: #fff;
-	color: #e63f2a;
+	color: #2a78e6;
 }
 
 .format-status .entry-content .page-links > span,
@@ -1198,7 +1203,7 @@ footer.entry-meta {
 /* Mediaelements */
 .hentry .mejs-mediaelement,
 .hentry .mejs-container .mejs-controls {
-	background: #220e10;
+	background: #0e1622;
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-loaded,
@@ -1207,7 +1212,7 @@ footer.entry-meta {
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {
-	background: #ea9629;
+	background: #2979ea;
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-total,
@@ -1381,7 +1386,7 @@ footer.entry-meta {
 
 /* Audio */
 .format-audio {
-	background-color: #db572f;
+	background-color: #2f77db;
 }
 
 .format-audio .entry-title {
@@ -1436,7 +1441,7 @@ footer.entry-meta {
 
 .format-chat .entry-meta a,
 .format-chat .entry-content a {
-	color: #722d19;
+	color: #193e72;
 }
 
 .format-chat .entry-meta .date a:before {
@@ -1453,7 +1458,7 @@ footer.entry-meta {
 }
 
 .format-chat .chat .chat-timestamp {
-	color: #722d19;
+	color: #193e72;
 	float: right;
 	font-size: 12px;
 	font-weight: normal;
@@ -1475,13 +1480,13 @@ footer.entry-meta {
 
 .format-gallery .entry-title {
 	font-size: 50px;
-	font-weight: 400;
+	font-weight: 300;
 	margin: 0;
 }
 
 .format-gallery .entry-meta a,
 .format-gallery .entry-content a {
-	color: #722d19;
+	color: #193e72;
 }
 
 /* Image */
@@ -1511,14 +1516,14 @@ footer.entry-meta {
 }
 
 .format-link .entry-title {
-	color: #ca3c08;
+	color: #0859ca;
 	display: inline;
 	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
 	margin-right: 20px;
 }
 
 .format-link .entry-title a {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .format-link div.entry-meta {
@@ -1543,7 +1548,7 @@ footer.entry-meta {
 .format-quote .entry-content a,
 .format-quote .entry-meta a,
 .format-quote .linked {
-	color: #e63f2a;
+	color: #2a78e6;
 }
 
 .format-quote .entry-content cite a {
@@ -1585,7 +1590,7 @@ footer.entry-meta {
 
 /* Status */
 .format-status {
-	background-color: #722d19;
+	background-color: #193e72;
 	padding: 0;
 }
 
@@ -1675,7 +1680,7 @@ footer.entry-meta {
 
 /* Video */
 .format-video {
-	background-color: #db572f;
+	background-color: #2f77db;
 }
 
 .format-video .entry-content a,
@@ -1687,11 +1692,11 @@ footer.entry-meta {
 
 .format-video .entry-title {
 	font-size: 50px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .format-video .entry-meta {
-	color: #220e10;
+	color: #0e1622;
 }
 
 
@@ -1758,7 +1763,7 @@ footer.entry-meta {
 .attachment .entry-meta a,
 .attachment .entry-meta .edit-link:before,
 .attachment .full-size-link:before {
-	color: #ca3c08;
+	color: #0859ca;
 }
 
 .attachment .entry-content {
@@ -1837,11 +1842,11 @@ footer.entry-meta {
 }
 
 .navigation a {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .navigation a:hover {
-	color: #ea9629;
+	color: #2979ea;
 	text-decoration: none;
 }
 
@@ -1872,7 +1877,7 @@ footer.entry-meta {
 }
 
 .paging-navigation .meta-nav {
-	background-color: #e63f2a;
+	background-color: #2a78e6;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -1893,13 +1898,13 @@ footer.entry-meta {
 }
 
 .paging-navigation a:hover .meta-nav {
-	background-color: #ea9629;
+	background-color: #75a5ea;
 	text-decoration: none;
 }
 
 .post-navigation {
 	background-color: #fff;
-	color: #ca3c08;
+	color: #0859ca;
 	font-size: 20px;
 	font-style: italic;
 	font-weight: 300;
@@ -1959,7 +1964,7 @@ footer.entry-meta {
 }
 
 .author-link {
-	color: #ca3c08;
+	color: #0859ca;
 	margin-left: 2px;
 }
 
@@ -2152,7 +2157,7 @@ footer.entry-meta {
 .comment-author .url,
 .comment-reply-link,
 .comment-reply-login {
-	color: #bc360a;
+	color: #0a54bc;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
@@ -2200,7 +2205,7 @@ footer.entry-meta {
 }
 
 .comment-meta a:hover {
-	color: #ea9629;
+	color: #2979ea;
 }
 
 .comment-metadata {
@@ -2255,7 +2260,7 @@ footer.entry-meta {
 }
 
 .comment-reply-title small a:hover {
-	color: #ed331c;
+	color: #1c8bed;
 	text-decoration: none;
 }
 
@@ -2428,11 +2433,11 @@ footer.entry-meta {
 }
 
 .widget a {
-	color: #bc360a;
+	color: #0a54bc;
 }
 
 .widget a:hover {
-	color: #ea9629;
+	color: #2979ea;
 }
 
 /* Search widget */
@@ -2512,7 +2517,7 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: #220e10;
+	background-color: #0e1622;
 	padding: 20px 0;
 }
 
@@ -2546,7 +2551,7 @@ footer.entry-meta {
 }
 
 .site-footer .widget a {
-	color: #e6402a;
+	color: #2a8ee6;
 }
 
 .site-footer .widget-title,
@@ -2839,7 +2844,7 @@ footer.entry-meta {
 
 	.toggled-on .nav-menu li a:hover,
 	.toggled-on .nav-menu ul a:hover {
-		background-color: #db572f;
+		background-color: #2f77db;
 		color: #fff;
 	}
 

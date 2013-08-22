@@ -107,7 +107,7 @@ add_action( 'after_setup_theme', 'twentythirteen_setup' );
 /**
  * Returns the Google font stylesheet URL, if available.
  *
- * The use of Source Sans Pro and Bitter by default is localized. For languages
+ * The use of Source Sans Pro and Raleway by default is localized. For languages
  * that use characters not supported by the font, the font can be disabled.
  *
  * @since Twenty Thirteen 1.0
@@ -124,19 +124,19 @@ function twentythirteen_fonts_url() {
 	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'twentythirteen' );
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Bitter, translate this to 'off'. Do not translate into your
+	 * supported by Raleway, translate this to 'off'. Do not translate into your
 	 * own language.
 	 */
-	$bitter = _x( 'on', 'Bitter font: on or off', 'twentythirteen' );
+	$raleway = _x( 'on', 'Raleway font: on or off', 'twentythirteen' );
 
-	if ( 'off' !== $source_sans_pro || 'off' !== $bitter ) {
+	if ( 'off' !== $source_sans_pro || 'off' !== $raleway ) {
 		$font_families = array();
 
 		if ( 'off' !== $source_sans_pro )
 			$font_families[] = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
 
-		if ( 'off' !== $bitter )
-			$font_families[] = 'Bitter:400,700';
+		if ( 'off' !== $raleway )
+			$font_families[] = 'Raleway:300,700';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -168,7 +168,7 @@ function twentythirteen_scripts_styles() {
 	// Loads JavaScript file with functionality specific to Twenty Thirteen.
 	wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
 
-	// Add Open Sans and Bitter fonts, used in the main stylesheet.
+	// Add Open Sans and Raleway fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
@@ -327,10 +327,10 @@ function twentythirteen_entry_meta() {
 		twentythirteen_entry_date();
 
 	// Translators: used between list items, there is a space after the comma.
-	$categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
-	if ( $categories_list ) {
-		echo '<span class="categories-links">' . $categories_list . '</span>';
-	}
+	//Alby2 $categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
+	//Alby2 if ( $categories_list ) {
+	//Alby2 	echo '<span class="categories-links">' . $categories_list . '</span>';
+	//Alby2 }
 
 	// Translators: used between list items, there is a space after the comma.
 	$tag_list = get_the_tag_list( '', __( ', ', 'twentythirteen' ) );
@@ -339,13 +339,13 @@ function twentythirteen_entry_meta() {
 	}
 
 	// Post author
-	if ( 'post' == get_post_type() ) {
-		printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
-			get_the_author()
-		);
-	}
+	//Alby2 if ( 'post' == get_post_type() ) {
+	//Alby2 	printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+	//Alby2 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+	//Alby2 		esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
+	//Alby2 		get_the_author()
+	//Alby2 	);
+	//Alby2 }
 }
 endif;
 
