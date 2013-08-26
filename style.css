@@ -465,6 +465,11 @@ hr {
 	margin: 0 0 24px;
 }
 
+/* Alby2 */
+.post-date {
+	font-size: small;
+	color: #a2a2a2;
+}
 
 /**
  * 2.0 Repeatable Patterns
@@ -2408,7 +2413,8 @@ footer.entry-meta {
 }
 
 .widget .widget-title {
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	/* Alby2 font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;*/
+	font: 300 20px Raleway, Helvetica, sans-serif;
 	margin: 0 0 10px;
 }
 
